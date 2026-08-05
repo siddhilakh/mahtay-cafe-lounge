@@ -2,31 +2,26 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-import experienceBarista from '../assets/images/experience_barista_1785938858879.jpg';
-import venueLiveMusic from '../assets/images/venue_live_music_1785941060447.jpg';
-import venueArtGallery from '../assets/images/venue_art_gallery_1785941082599.jpg';
-import menuCocktail from '../assets/images/menu_cocktail_1785945159697.jpg';
-
 const experiences = [
   {
     title: "Artisan Coffee",
     description: "Hand-pulled espresso, premium beans, expert baristas.",
-    image: experienceBarista
+    image: "/images/experience_barista_1785938858879.jpg"
   },
   {
     title: "Live Music",
     description: "Local artists every week. An atmosphere worth staying for.",
-    image: venueLiveMusic
+    image: "/images/venue_live_music_1785941060447.jpg"
   },
   {
     title: "Art Gallery",
     description: "Rotating exhibitions from Niagara's local artists.",
-    image: venueArtGallery
+    image: "/images/venue_art_gallery_1785941082599.jpg"
   },
   {
     title: "Evening Lounge",
     description: "Craft cocktails, wine, late-night ambience.",
-    image: menuCocktail
+    image: "/images/menu_cocktail_1785945159697.jpg"
   }
 ];
 
@@ -79,6 +74,7 @@ export function Features() {
                 src={item.image} 
                 alt={item.title}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                referrerPolicy="no-referrer"
               />
               
               {/* Subtle tint overlay */}

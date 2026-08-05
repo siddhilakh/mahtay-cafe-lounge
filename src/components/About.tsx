@@ -2,7 +2,6 @@ import { useRef, useEffect } from 'react';
 import { motion } from 'motion/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import galleryPeople from '../assets/images/gallery_people_1785938922599.jpg';
 
 export function About() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -55,9 +54,10 @@ export function About() {
           <div className="w-full md:w-5/12">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl group shadow-2xl">
               <img 
-                src={galleryPeople} 
+                src="/images/gallery_people_1785938922599.jpg" 
                 alt="Lively cafe atmosphere"
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>

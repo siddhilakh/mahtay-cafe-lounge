@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
-import galleryVertical from '../assets/images/gallery_vertical_1785945205036.jpg';
 
 interface ReservationModalProps {
   isOpen: boolean;
@@ -47,9 +46,10 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
 
             <div className="hidden md:block w-1/2 relative overflow-hidden bg-espresso">
               <img 
-                src={galleryVertical} 
+                src="/images/gallery_vertical_1785945205036.jpg" 
                 alt="Mahtay Cafe"
                 className="absolute inset-0 w-full h-full object-cover opacity-80"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-espresso via-transparent to-transparent" />
             </div>
