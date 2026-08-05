@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Bodoni Moda", serif;
+  --font-sans: "Inter Tight", sans-serif;
+  
+  --color-espresso: #14110F;
+  --color-walnut: #2C201A;
+  --color-ivory: #F7F3ED;
+  --color-plum: #5D3A64;
+  --color-gold: #C2A56C;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-espresso text-ivory overflow-x-hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+  
+  .numbers {
+    @apply font-mono;
+  }
+}
+
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
