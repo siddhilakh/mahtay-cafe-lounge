@@ -34,7 +34,7 @@ export function Gallery() {
           <div className="w-full md:w-5/12 gallery-img">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src="/images/gallery_vertical_1785945205036.jpg" 
+                src={`${import.meta.env.BASE_URL}images/gallery_vertical_1785945205036.jpg`} 
                 alt="Vertical details"
                 className="w-full h-full object-cover"
               />

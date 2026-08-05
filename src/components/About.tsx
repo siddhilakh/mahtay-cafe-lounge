@@ -54,7 +54,7 @@ export function About() {
           <div className="w-full md:w-5/12">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl group shadow-2xl">
               <img 
-                src="/images/gallery_people_1785938922599.jpg" 
+                src={`${import.meta.env.BASE_URL}images/gallery_people_1785938922599.jpg`} 
                 alt="Lively cafe atmosphere"
                 className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
               />

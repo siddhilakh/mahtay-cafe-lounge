@@ -56,7 +56,7 @@ export default function App() {
       {/* Global Video Background */}
       <div className="fixed inset-0 z-[-2] w-full h-full">
         <video
-          src="/images/hero_video.mp4"
+          src={`${import.meta.env.BASE_URL}images/hero_video.mp4`}
           autoPlay
           muted
           loop
