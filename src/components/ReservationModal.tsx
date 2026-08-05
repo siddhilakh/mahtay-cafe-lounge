@@ -46,7 +46,7 @@ export function ReservationModal({ isOpen, onClose }: ReservationModalProps) {
 
             <div className="hidden md:block w-1/2 relative overflow-hidden bg-espresso">
               <img 
-                src="/images/gallery_vertical_1785945205036.jpg" 
+                src={`${import.meta.env.BASE_URL}images/gallery_vertical_1785945205036.jpg`} 
                 alt="Mahtay Cafe"
                 className="absolute inset-0 w-full h-full object-cover opacity-80"
               />
