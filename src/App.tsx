@@ -14,6 +14,8 @@ import { Reviews } from './components/Reviews';
 import { Footer } from './components/Footer';
 import { ReservationModal } from './components/ReservationModal';
 
+import heroVideo from './assets/images/hero_video.mp4';
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function App() {
@@ -56,7 +58,7 @@ export default function App() {
       {/* Global Video Background */}
       <div className="fixed inset-0 z-[-2] w-full h-full">
         <video
-          src={`${import.meta.env.BASE_URL}images/hero_video.mp4`}
+          src={heroVideo}
           autoPlay
           muted
           loop

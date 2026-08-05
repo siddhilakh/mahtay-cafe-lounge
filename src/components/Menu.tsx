@@ -4,18 +4,19 @@ import { X } from 'lucide-react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const BASE = import.meta.env.BASE_URL;
+import menuLatteArt from '../assets/images/menu_latte_art_1785945147381.jpg';
+import menuCocktail from '../assets/images/menu_cocktail_1785945159697.jpg';
 
 const signatureItems = [
   {
     name: "The Velvet Cortado",
     description: "Single-origin espresso, steamed milk, hint of Madagascar vanilla.",
-    image: `${BASE}images/menu_latte_art_1785945147381.jpg`,
+    image: menuLatteArt,
   },
   {
     name: "Midnight Botanical",
     description: "Gin, elderflower, blackberry reduction, smoked rosemary.",
-    image: `${BASE}images/menu_cocktail_1785945159697.jpg`,
+    image: menuCocktail,
   }
 ];
 

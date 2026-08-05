@@ -1,6 +1,7 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import galleryVertical from '../assets/images/gallery_vertical_1785945205036.jpg';
 
 export function Gallery() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,7 +35,7 @@ export function Gallery() {
           <div className="w-full md:w-5/12 gallery-img">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl shadow-2xl">
               <img 
-                src={`${import.meta.env.BASE_URL}images/gallery_vertical_1785945205036.jpg`} 
+                src={galleryVertical} 
                 alt="Vertical details"
                 className="w-full h-full object-cover"
               />

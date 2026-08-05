@@ -2,28 +2,31 @@ import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-const BASE = import.meta.env.BASE_URL;
+import experienceBarista from '../assets/images/experience_barista_1785938858879.jpg';
+import venueLiveMusic from '../assets/images/venue_live_music_1785941060447.jpg';
+import venueArtGallery from '../assets/images/venue_art_gallery_1785941082599.jpg';
+import menuCocktail from '../assets/images/menu_cocktail_1785945159697.jpg';
 
 const experiences = [
   {
     title: "Artisan Coffee",
     description: "Hand-pulled espresso, premium beans, expert baristas.",
-    image: `${BASE}images/experience_barista_1785938858879.jpg`
+    image: experienceBarista
   },
   {
     title: "Live Music",
     description: "Local artists every week. An atmosphere worth staying for.",
-    image: `${BASE}images/venue_live_music_1785941060447.jpg`
+    image: venueLiveMusic
   },
   {
     title: "Art Gallery",
     description: "Rotating exhibitions from Niagara's local artists.",
-    image: `${BASE}images/venue_art_gallery_1785941082599.jpg`
+    image: venueArtGallery
   },
   {
     title: "Evening Lounge",
     description: "Craft cocktails, wine, late-night ambience.",
-    image: `${BASE}images/menu_cocktail_1785945159697.jpg`
+    image: menuCocktail
   }
 ];
 
